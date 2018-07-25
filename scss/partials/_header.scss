@@ -1,0 +1,95 @@
+.nav-bar {
+    width: 100%;
+    background: $white;
+    position: relative;
+    position: fixed;
+    @include clear-fix;
+    @include mq(1470px) {
+        padding: 0 20px;
+    }
+}
+
+.logo {
+    width: 100px;
+    display: inline-block;
+    margin-top: 17px;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.premium {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 24.2%;
+    color: $txt-blue;
+    font-weight: bold;
+    font-size: 20px;
+    @include mq(1080px) {
+        top: 128px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @include mq(540px) {
+        top: 190px;
+        width: 185px;
+    }
+}
+
+.nav-buttons {
+    float: right;
+    @include mq(540px) {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.get-quote {
+    height: 40px;
+    width: 255px;
+    background: $green;
+    border: none;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 12px;
+    margin: 10px 20px 10px 0;
+    display: inline-block;
+    @include mq(540px) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.account {
+    height: 40px;
+    width: 95px;
+    padding: 0 5px;
+    background: none;
+    border: 1px solid $txt-blue;
+    text-transform: uppercase;
+    color: $txt-blue;
+    font-size: 12px;
+    display: inline-block;
+    @include mq(540px) {
+        margin-bottom: 10px;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+}
+
+.more-templates {
+    width: 100%;
+    height: 50px;
+    background: $light-gray;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: $txt-blue;
+    font-weight: bold;
+    @include mq(1470px) {
+        padding: 0 20px;
+    }
+}
